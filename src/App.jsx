@@ -1,20 +1,15 @@
-import { useState } from 'react'
-import React from "react";
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Exchange from './pages/Exchange';
 
-function App() {
-  
-        
+
+
+export default function App() {
   return (
-    <>
-      <div className='text-lg text-green-400'>
-        hello
-      </div>
-        
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Exchange />} />
+   
+      </Routes>
+    </Router>
+  );
 }
-
-export default App
