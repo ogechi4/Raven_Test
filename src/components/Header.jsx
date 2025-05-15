@@ -8,7 +8,7 @@ export default function Header({ search, setSearch }) {
         <nav className="hidden md:flex gap-6 text-sm text-gray-300">
           <Link to="/">Exchange</Link>
           <Link to="/wallets">Wallets</Link>
-          <a href="#">Roqqu Hub</a>
+          <Link to="/roqquhub">Roqqu Hub</Link>
         </nav>
       </div>
       <input
