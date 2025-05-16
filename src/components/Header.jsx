@@ -33,7 +33,6 @@ export default function Header({ search, setSearch }) {
       {/* Desktop user info */}
       <div className="hidden md:flex items-center gap-2">
         <span className="text-sm text-white">@Ulochi</span>
-        <img src="/profile.jpg" alt="Profile" className="w-8 h-8 rounded-full object-cover" />
       </div>
 
       {/* Mobile menu button */}
