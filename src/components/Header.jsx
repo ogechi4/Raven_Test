@@ -5,18 +5,23 @@ export default function Header({ search, setSearch }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between px-6 py-4 bg-[#14142b] relative">
-      <div className="flex items-center gap-4">
-        <img src="/logo.png" alt="Logo" className="w-6 h-6" />
-        
+    <header className="flex items-center justify-between px-4 sm:px-6 py-4 bg-[#14142b] relative">
+      <div className="flex items-center gap-3 sm:gap-4">
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-2">
+          
+          <span className="text-white font-bold text-sm sm:text-base">RavenX</span>
+        </Link>
+
         {/* Desktop nav */}
-        <nav className="hidden md:flex gap-6 text-sm text-gray-300">
+        <nav className="hidden md:flex gap-6 text-sm text-gray-300 ml-4">
           <Link to="/">Exchange</Link>
           <Link to="/wallets">Wallets</Link>
           <a href="#">Roqqu Hub</a>
         </nav>
       </div>
 
+      {/* Search input */}
       <input
         type="text"
         placeholder="Search pairs"
@@ -27,14 +32,14 @@ export default function Header({ search, setSearch }) {
 
       {/* Desktop user info */}
       <div className="hidden md:flex items-center gap-2">
-        <span className="text-sm">@Olakunle</span>
-        <img src="/profile.jpg" alt="Profile" className="w-8 h-8 rounded-full" />
+        <span className="text-sm text-white">@Ulochi</span>
+        <img src="/profile.jpg" alt="Profile" className="w-8 h-8 rounded-full object-cover" />
       </div>
 
       {/* Mobile menu button */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="md:hidden text-gray-300 focus:outline-none"
+        className="md:hidden text-gray-300 focus:outline-none ml-2"
       >
         ☰
       </button>

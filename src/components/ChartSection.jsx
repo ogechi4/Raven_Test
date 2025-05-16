@@ -40,7 +40,7 @@ export default function ChartSection() {
       {/* Responsive top row */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className="text-green-400 font-semibold flex items-center gap-2">
-          <img src="/btc.png" alt="BTC" className="w-6 h-6" />
+        <span className="text-white font-bold text-sm sm:text-base">X</span>
           BTC/USDT <span>$20,634</span>
         </div>
 
